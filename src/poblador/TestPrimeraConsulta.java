@@ -48,8 +48,8 @@ public class TestPrimeraConsulta {
 //				solo procesa filas donde el año de nacimiento termina en 0
 				if (rs.getInt("nacimiento") % 10 == 0) {
 //					Obtiene el valor de cada columna de esa fila
-					System.out.printf("%d[%s,%s,%s,%s]%n", index, "nombre="+rs.getString(1), rs.getString(2), rs.getString(3),
-							rs.getString(4));
+					System.out.printf("%d[%s,%s,%s,%d]%n", index, "nombre="+rs.getString(1), rs.getString(2), rs.getString(3),
+							rs.getInt(4));
 					counter++;
 				}
 				index++;
